@@ -23,4 +23,9 @@ describe('<Logo />', () => {
     const newElement = shallow(<Logo height={customHeight} />);
     expect(newElement.prop('height')).to.equal(customHeight);
   });
+
+  it('should be possible to get just the icon and not the text', () => {
+    const newElement = shallow(<Logo onlyIcon />);
+    expect(newElement.prop('viewBox')).to.equal('0 0 64 64');
+  });
 });
