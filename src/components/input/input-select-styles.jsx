@@ -12,7 +12,7 @@ export default createStyleSheet('InputSelect', (theme) => {
         '&__element': {
           appearance: 'none',
           opacity: 0,
-          paddingRight: '24px',
+          paddingRight: 24,
         },
 
         '&__placeholder, &__value-label': {
@@ -20,7 +20,7 @@ export default createStyleSheet('InputSelect', (theme) => {
           left: 0,
           width: '100%',
           overflow: 'hidden',
-          paddingRight: '24pxm',
+          paddingRight: 24,
           pointerEvents: 'none',
         },
 
@@ -32,6 +32,7 @@ export default createStyleSheet('InputSelect', (theme) => {
         '&__value-label': {
           top: 0,
           textOverflow: 'ellipsis',
+          whitespace: 'nowrap',
         },
 
         '&__select-arrow': {
